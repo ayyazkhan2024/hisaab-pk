@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zakat Calculator Pakistan 2026 - Gold, Silver, Cash Nisab Calculator</title>
+<meta name="description" content="Free Zakat calculator Pakistan ke liye. Gold, silver, cash, aur business assets par apna Zakat calculate karen, current nisab rates ke mutabiq.">
+<meta name="keywords" content="zakat calculator pakistan, nisab calculator, gold zakat calculator, silver zakat calculator">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">Hisaab<span>.pk</span></h1>
+    <p class="tagline">Zakat aur Tax Calculator — Free, Fast, Accurate</p>
+  </div>
+</header>
+
+<main class="container calc-page">
+
+  <a href="index.html" class="back-link">← Home</a>
+  <h2 class="calc-title">Zakat Calculator</h2>
+  <p class="calc-subtitle">Apne assets ki tafseel daal kar Zakat calculate karen</p>
+
+  <div class="calc-box">
+
+    <div class="form-group">
+      <label>Aaj Gold Ka Rate (per gram, 24K) — PKR</label>
+      <input type="number" id="goldRate" placeholder="e.g. 39267">
+      <p class="hint">Aaj ka rate apne local jeweller ya goldz.pk se check kar len</p>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Aapke paas Gold (grams mein)</label>
+        <input type="number" id="goldGrams" placeholder="0" value="0">
+      </div>
+      <div class="form-group">
+        <label>Aaj Silver Ka Rate (per gram) — PKR</label>
+        <input type="number" id="silverRate" placeholder="e.g. 320">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Aapke paas Silver (grams mein)</label>
+      <input type="number" id="silverGrams" placeholder="0" value="0">
+    </div>
+
+    <div class="form-group">
+      <label>Cash + Bank Balance (PKR)</label>
+      <input type="number" id="cash" placeholder="0" value="0">
+      <p class="hint">Saving account, current account, ghar mein rakhi cash — sab milaa kar</p>
+    </div>
+
+    <div class="form-group">
+      <label>Investments / Stocks / Business Stock (PKR)</label>
+      <input type="number" id="investments" placeholder="0" value="0">
+      <p class="hint">Market value ke mutabiq, jo bhi aaj bechne par milega</p>
+    </div>
+
+    <div class="form-group">
+      <label>Aap par Qarz / Liabilities (PKR)</label>
+      <input type="number" id="liabilities" placeholder="0" value="0">
+      <p class="hint">Ye amount total se minus ho jayegi</p>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateZakat()">Zakat Calculate Karen</button>
+
+    <div class="result-box" id="resultBox">
+      <p class="result-label">Aap Par Zakat Wajib Hai</p>
+      <div class="result-amount" id="zakatAmount">PKR 0</div>
+      <div class="result-breakdown" id="breakdown"></div>
+    </div>
+
+  </div>
+
+  <div class="ad-slot">Advertisement Space</div>
+
+  <div class="guide-section">
+    <h2>Zakat Kaise Calculate Hoti Hai?</h2>
+    <p>Zakat Islam ka teesra rukn hai aur har sahib-e-nisab Muslim par har lunar saal mein ek baar wajib hoti hai. Iski rate aapki total zakatable wealth ka 2.5% hai.</p>
+
+    <h3>Nisab Kya Hai?</h3>
+    <p>Nisab woh minimum amount hai jis se zyada wealth hone par Zakat wajib ho jaati hai. Do tareeqay hain calculate karne ke:</p>
+    <ul>
+      <li><strong>Gold Nisab:</strong> 87.48 grams (7.5 tola) gold ki value</li>
+      <li><strong>Silver Nisab:</strong> 612.36 grams (52.5 tola) silver ki value</li>
+    </ul>
+    <p>Zyada tar scholars silver ka nisab use karne ki tarjeeh dete hain kyunki ye lower hai aur zyada log Zakat dene ke qabil ban jaate hain.</p>
+
+    <h3>Kis Par Zakat Wajib Hai?</h3>
+    <ul>
+      <li>Gold aur silver jo ek lunar saal se zyada waqt se aapke paas hai</li>
+      <li>Cash aur bank balance</li>
+      <li>Business stock aur investments ki market value</li>
+      <li>Shares aur stocks (agar trading ke liye rakhe hain)</li>
+    </ul>
+
+    <h3>Kis Par Zakat Wajib Nahi?</h3>
+    <ul>
+      <li>Rehne wala ghar (jo aap khud use kar rahe hain)</li>
+      <li>Personal use ki gaari</li>
+      <li>Rozmarra ki zaroorat ka samaan</li>
+    </ul>
+
+    <h3>Calculation Ka Formula</h3>
+    <p>Total Zakatable Assets minus Liabilities, agar nisab se zyada ho, to us amount ka 2.5% Zakat wajib hai.</p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Hisaab.pk — Zakat aur Tax Calculator Pakistan</p>
+  </div>
+</footer>
+
+<script src="js/zakat.js"></script>
+</body>
+</html>

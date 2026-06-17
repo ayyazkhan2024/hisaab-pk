@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FBR Salary Tax Calculator Pakistan 2025-26 - Free Income Tax Calculator</title>
+<meta name="description" content="FBR ke official tax slabs 2025-26 ke mutabiq apni salary tax calculate karen. Monthly aur yearly tax dono dekhain, free aur accurate.">
+<meta name="keywords" content="fbr tax calculator, salary tax calculator pakistan 2025-26, income tax calculator pakistan">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">Hisaab<span>.pk</span></h1>
+    <p class="tagline">Zakat aur Tax Calculator — Free, Fast, Accurate</p>
+  </div>
+</header>
+
+<main class="container calc-page">
+
+  <a href="index.html" class="back-link">← Home</a>
+  <h2 class="calc-title">FBR Salary Tax Calculator 2025-26</h2>
+  <p class="calc-subtitle">Apni salary daal kar FBR ke official slabs ke mutabiq tax calculate karen</p>
+
+  <div class="calc-box">
+
+    <div class="form-group">
+      <label>Salary Kis Tarah Enter Karna Chahte Hain?</label>
+      <select id="salaryType">
+        <option value="monthly">Monthly Salary</option>
+        <option value="yearly">Yearly Salary</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label id="salaryLabel">Monthly Gross Salary (PKR)</label>
+      <input type="number" id="salaryAmount" placeholder="e.g. 150000">
+      <p class="hint">Gross salary — bonus, allowances shamil karne se pehle ki basic+allowances total</p>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateTax()">Tax Calculate Karen</button>
+
+    <div class="result-box" id="resultBox">
+      <p class="result-label">Aapki Annual Tax</p>
+      <div class="result-amount" id="taxAmount">PKR 0</div>
+      <div class="result-breakdown" id="breakdown"></div>
+    </div>
+
+  </div>
+
+  <div class="ad-slot">Advertisement Space</div>
+
+  <div class="guide-section">
+    <h2>FBR Tax Slabs 2025-26 (Salaried Persons)</h2>
+    <p>Pakistan mein progressive tax system hai — matlab har slab ki rate sirf us slab ke andar wali income par lagti hai, poori income par nahi.</p>
+
+    <h3>Official Slabs</h3>
+    <ul>
+      <li><strong>0%</strong> — Annual income up to PKR 600,000 (tax-free)</li>
+      <li><strong>2.5%</strong> — PKR 600,000 se 1,200,000 tak</li>
+      <li><strong>11%</strong> plus PKR 6,000 — PKR 1,200,000 se 2,200,000 tak</li>
+      <li><strong>23%</strong> plus PKR 116,000 — PKR 2,200,000 se 3,200,000 tak</li>
+      <li><strong>30%</strong> plus PKR 346,000 — PKR 3,200,000 se 4,100,000 tak</li>
+      <li><strong>35%</strong> plus PKR 616,000 — PKR 4,100,000 se zyada</li>
+    </ul>
+
+    <h3>Calculation Kaise Hoti Hai?</h3>
+    <p>Maan len aapki annual salary PKR 1,800,000 hai. Ye 1,200,000–2,200,000 ke slab mein aati hai:</p>
+    <ul>
+      <li>Fixed tax (pehle slabs ka) = PKR 6,000</li>
+      <li>Extra income us slab mein = 1,800,000 - 1,200,000 = PKR 600,000</li>
+      <li>Is par 11% tax = PKR 66,000</li>
+      <li>Total tax = PKR 72,000 per year</li>
+    </ul>
+
+    <h3>Zaroori Baat</h3>
+    <p>Ye calculator estimate ke liye hai. Actual tax deduction mein aapki employer ki taraf se diye allowances, medical, aur other exemptions shamil ho sakti hain. Final confirmation ke liye FBR Iris portal ya tax consultant se rabta karen.</p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Hisaab.pk — Zakat aur Tax Calculator Pakistan</p>
+  </div>
+</footer>
+
+<script src="js/fbr-tax.js"></script>
+</body>
+</html>
